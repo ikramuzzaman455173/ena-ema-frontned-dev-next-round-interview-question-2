@@ -1,4 +1,6 @@
-## Frontend Developer Interview Questions (Ena Ema Technology Limited)
+<h3 align="center">Frontend Developer Interview Questions (Ena Ema Technology Limited)</h3>
+
+---
 
 ### Question 1: Shopping Cart Calculation
 **Problem Statement:**  
