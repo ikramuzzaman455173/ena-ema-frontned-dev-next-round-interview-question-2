@@ -74,6 +74,8 @@ const searchTerm = 'the';
 
 ---
 
+/*
+
 ### Question 4: Simple Voting System
 
 **Problem Statement:**  
@@ -99,3 +101,5 @@ const votes = [
   Charlie: 1
 }
 ```
+
+*/
