@@ -1,12 +1,11 @@
-<h3 align="center">Frontend Developer Interview Questions (Ena Ema Technology Limited)</h3>
-
----
+<h3 align="center"> Frontend Developer Interview Questions (Ena Ema Technology Limited)</h3>
 
 ### Question 1: Shopping Cart Calculation
+
 **Problem Statement:**  
 You are working on the shopping cart functionality for an online store. Write a function called `calculateCartTotal` that takes an array of items in the cart. Each item has a `price`, `quantity`, and an optional `discount` percentage. The function should return the total price of the cart after applying the discount to each item.
 
-#### Sample Data
+**Sample Data:**
 ```javascript
 const cartItems = [
   { price: 10.0, quantity: 2, discount: 0 },
@@ -15,13 +14,13 @@ const cartItems = [
 ];
 ```
 
-#### Expected Output
+**Expected Output:**
 ```javascript
 // Total = (10 * 2) + (15 * 1 * 0.9) + (20 * 3 * 0.95) = 20 + 13.5 + 57 = 90.5
 90.5
 ```
 
-#### Function Signature
+**Function Signature:**
 ```javascript
 function calculateCartTotal(cart) {
   // Your code here
@@ -30,55 +29,73 @@ function calculateCartTotal(cart) {
 
 ---
 
-### Question 2: User Authentication Token
+### Question 2: Expense Tracker
+
 **Problem Statement:**  
-You are developing a user authentication system for a web application. Write a function called `generateAuthToken` that takes a user object containing `userId`, `username`, and `role`, and returns a JSON Web Token (JWT) string. For simplicity, you can mock the token generation by returning a concatenated string of the user properties.
+You are creating an expense tracker application for users to log their daily expenses. Write a function called `calculateTotalExpenses` that takes an array of expense objects and returns the total amount spent. Each expense object has a `description` and an `amount`.
 
-#### Sample Data
+**Example Input:**
 ```javascript
-const user = {
-  userId: '12345',
-  username: 'john_doe',
-  role: 'admin'
-};
+const expenses = [
+  { description: 'Groceries', amount: 50 },
+  { description: 'Gas', amount: 30 },
+  { description: 'Rent', amount: 1000 },
+  { description: 'Utilities', amount: 150 }
+];
 ```
 
-#### Expected Output
+**Expected Output:**
 ```javascript
-'12345.john_doe.admin'
-```
-
-#### Function Signature
-```javascript
-function generateAuthToken(user) {
-  // Your code here
-}
+1230
 ```
 
 ---
 
-### Question 3: Form Data Serialization
+### Question 3: Library Book Search
+
 **Problem Statement:**  
-You are creating a form submission feature for a web application. Write a function called `serializeFormData` that takes an object representing form fields and their values and returns a query string format suitable for URL encoding.
+You are developing a library management system where users can search for books. Write a function called `searchBooks` that accepts an array of book objects and a search term. The function should return an array of book titles that include the search term (case-insensitive).
 
-#### Sample Input
+**Example Input:**
 ```javascript
-const formData = {
-  name: 'Jane Doe',
-  email: 'jane@example.com',
-  age: 28,
-  interests: ['reading', 'traveling']
-};
+const books = [
+  { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' },
+  { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+  { title: '1984', author: 'George Orwell' },
+  { title: 'The Catcher in the Rye', author: 'J.D. Salinger' }
+];
+const searchTerm = 'the';
 ```
 
-#### Expected Output
+**Expected Output:**
 ```javascript
-'name=Jane%20Doe&email=jane%40example.com&age=28&interests=reading&interests=traveling'
+['The Great Gatsby', 'The Catcher in the Rye']
 ```
 
-#### Function Signature
+---
+
+### Question 4: Simple Voting System
+
+**Problem Statement:**  
+You are building a simple voting system for a local election. Write a function called `tallyVotes` that takes an array of votes, where each vote is represented as a string of a candidate's name. The function should return an object that shows each candidate's name and the number of votes they received.
+
+**Example Input:**
 ```javascript
-function serializeFormData(data) {
-  // Your code here
+const votes = [
+  'Alice',
+  'Bob',
+  'Alice',
+  'Charlie',
+  'Bob',
+  'Alice'
+];
+```
+
+**Expected Output:**
+```javascript
+{
+  Alice: 3,
+  Bob: 2,
+  Charlie: 1
 }
 ```
