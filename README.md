@@ -71,35 +71,3 @@ const searchTerm = 'the';
 ```javascript
 ['The Great Gatsby', 'The Catcher in the Rye']
 ```
-
----
-
-/*
-
-### Question 4: Simple Voting System
-
-**Problem Statement:**  
-You are building a simple voting system for a local election. Write a function called `tallyVotes` that takes an array of votes, where each vote is represented as a string of a candidate's name. The function should return an object that shows each candidate's name and the number of votes they received.
-
-**Example Input:**
-```javascript
-const votes = [
-  'Alice',
-  'Bob',
-  'Alice',
-  'Charlie',
-  'Bob',
-  'Alice'
-];
-```
-
-**Expected Output:**
-```javascript
-{
-  Alice: 3,
-  Bob: 2,
-  Charlie: 1
-}
-```
-
-*/
